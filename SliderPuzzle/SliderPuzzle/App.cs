@@ -22,6 +22,7 @@ namespace SliderPuzzle
                         new Label {
                             HorizontalTextAlignment = TextAlignment.Center,
                             Text = "Welcome to Xamarin Forms!"
+
                         }
                     }
                 }
