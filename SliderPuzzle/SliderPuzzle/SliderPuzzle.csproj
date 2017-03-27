@@ -37,6 +37,7 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SliderPuzzlePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -53,8 +54,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img1.jpeg" />
+    <EmbeddedResource Include="img2.jpeg" />
+    <EmbeddedResource Include="img3.jpeg" />
+    <EmbeddedResource Include="img4.jpeg" />
+    <EmbeddedResource Include="img5.jpeg" />
+    <EmbeddedResource Include="img6.jpeg" />
+    <EmbeddedResource Include="img7.jpeg" />
+    <EmbeddedResource Include="img8.jpeg" />
+    <EmbeddedResource Include="img9.jpeg" />
+    <EmbeddedResource Include="img10.jpeg" />
+    <EmbeddedResource Include="img11.jpeg" />
+    <EmbeddedResource Include="img12.jpeg" />
+    <EmbeddedResource Include="img13.jpeg" />
+    <EmbeddedResource Include="img14.jpeg" />
+    <EmbeddedResource Include="img15.jpeg" />
+    <EmbeddedResource Include="img16.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.2.0.45\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
