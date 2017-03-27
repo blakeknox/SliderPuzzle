@@ -113,14 +113,14 @@ namespace SliderPuzzle
                 row = item.Position.Row + 1;
                 col = item.Position.Column;
             }
-            else (move == 3) // move left
+            else // move left
             {
                 row = item.Position.Row;
                 col = item.Position.Column - 1;
             }
 
             GridItem swapWith = _gridItems[new GridPosition(row, col)];
-            Swap(item, swapWith);
+            Swap(item, swapWith); // swap selected item with the ra
             OnContentViewSizeChanged(this.Content, null);
         }
 
@@ -136,7 +136,7 @@ namespace SliderPuzzle
         }
     }
 
-    internal class GridItem : Label
+    internal class GridItem : Image
     {
         public GridPosition Position
         {
@@ -147,10 +147,11 @@ namespace SliderPuzzle
         public GridItem(GridPosition position, String text)
         {
             Position = position;
-            Text = text;
-            TextColor = Color.White;
-            HorizontalOptions = LayoutOptions.Center;
-            VerticalOptions = LayoutOptions.Center;
+            //Text = text;
+            //TextColor = Color.White;
+            Source = ImageSource.FromResource(("SliderPuzzle.img") + (text) + (".jpeg"));
+            HorizontalOptions = LayoutOptions.Fill;
+            VerticalOptions = LayoutOptions.Fill;
         }
     }
 
